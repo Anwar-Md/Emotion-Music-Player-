@@ -80,47 +80,47 @@ with open(str(Path.cwd())+"\emotion.txt","w") as emotion_file:
 
         if time.time() > future:  ##after 5 second music will play
             cv2.destroyAllWindows()
-            mp = 'C:/Program Files (x86)/Windows Media Player/wmplayer.exe' # copy your windows media player address
+            mp = ('C:/Program Files (x86)/Windows Media Player/wmplayer.exe') # copy your windows media player address
             if text == 'Angry':
-                randomfile = random.choice(os.listdir("E:\Anwar\Projects\Anwar Emotion Music Player\songs\Angry"))
+                randomfile = random.choice(os.listdir('.\Songs\Angry')) # cpoy your subfloder address
                 print('You are Angry......,I will play song for you :' + randomfile)
-                file = ('E:\Anwar\Projects\Anwar Emotion Music Player\songs\Angry/' + randomfile) # cpoy your directory address
+                file = ('.\Songs\Angry/' + randomfile) # cpoy your subfloder address
                 subprocess.call([mp, file])
 
             if text == 'Disgusted':
-                randomfile = random.choice(os.listdir("E:\Anwar\Projects\Anwar Emotion Music Player\songs\Disgusted"))
+                randomfile = random.choice(os.listdir('.\Songs\Disgusted')) # cpoy your subfloder address
                 print('You are Disgusted......,I will play song for you :' + randomfile)
-                file = ('E:\Anwar\Projects\Anwar Emotion Music Player\songs\Disgusted/' + randomfile) # cpoy your directory address
+                file = ('.\Songs\Disgusted/' + randomfile) # cpoy your subfloder address
                 subprocess.call([mp, file])
 
             if text == 'Fearful':
-                randomfile = random.choice(os.listdir("E:\Anwar\Projects\Anwar Emotion Music Player\songs\Fearful"))
+                randomfile = random.choice(os.listdir('.\Songs\Fearful')) # cpoy your subfloder address
                 print('You are Fearful......,I will play song for you :' + randomfile)
-                file = ("E:\Anwar\Projects\Anwar Emotion Music Player\songs\Fearful/" + randomfile) # cpoy your directory address
+                file = ('.\Songs\Fearful/' + randomfile) # cpoy your subfloder address
                 subprocess.call([mp, file])
 
             if text == 'Happy':
-                randomfile = random.choice(os.listdir("E:\Anwar\Projects\Anwar Emotion Music Player\songs\Happy"))
+                randomfile = random.choice(os.listdir('.\Songs\Happy')) # cpoy your subfloder address
                 print('You are Happy......,I will play song for you :' + randomfile)
-                file = ('E:\Anwar\Projects\Anwar Emotion Music Player\songs\Happy/' + randomfile) # cpoy your directory address
+                file = ('.\Songs\Happy/' + randomfile) # cpoy your subfloder address
                 subprocess.call([mp, file])
             
             if text == 'Neutral':
-                randomfile = random.choice(os.listdir("E:\Anwar\Projects\Anwar Emotion Music Player\songs/Neutral"))
+                randomfile = random.choice(os.listdir('.\Songs/Neutral')) # cpoy your subfloder address
                 print('You are Neutral......,I will play song for you :' + randomfile)
-                file = ('E:\Anwar\Projects\Anwar Emotion Music Player\songs/Neutral/' + randomfile) # cpoy your directory address
+                file = ('.\Songs/Neutral/' + randomfile) # cpoy your subfloder address
                 subprocess.call([mp, file])
 
             if text == 'Sad':
-                randomfile = random.choice(os.listdir("E:\Anwar\Projects\Anwar Emotion Music Player\songs\Sad"))
+                randomfile = random.choice(os.listdir('.\Songs\Sad')) # cpoy your subfloder address
                 print('You are Sad......,I will play song for you :' + randomfile)
-                file = ('E:\Anwar\Projects\Anwar Emotion Music Player\songs\Sad/' + randomfile) # cpoy your directory address
+                file = ('.\Songs\Sad/' + randomfile) # cpoy your subfloder address
                 subprocess.call([mp, file])
 
             if text == 'Surprised':
-                randomfile = random.choice(os.listdir("E:\Anwar\Projects\Anwar Emotion Music Player\songs\Surprised"))
+                randomfile = random.choice(os.listdir('.\Songs\Surprised')) # cpoy your subfloder address
                 print('You are Surprised......,I will play song for you :' + randomfile)
-                file = ("E:\Anwar\Projects\Anwar Emotion Music Player\songs\Surprised/" + randomfile) # cpoy your directory address
+                file = ('.\Songs\Surprised/' + randomfile) # cpoy your subfloder address
                 subprocess.call([mp, file])
 
             print(randomfile)
