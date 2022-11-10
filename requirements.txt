@@ -1,0 +1,20 @@
+
+pip install numpy
+
+
+pip install opencv-python
+
+
+pip install pandas
+
+
+pip install keras
+
+
+pip install pathlib
+
+
+pip install pypi
+
+
+pip install tensorflow
